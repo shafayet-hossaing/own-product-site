@@ -5,28 +5,23 @@
 
 
 // Adding the amount of order using function
-// let numberOfOrderCount = 0
-// let totalPriceCount = 0
-// function cart(){
-//     let numberOfOrder = document.querySelector("#numberOfOrder")
-//     let totalOrder = numberOfOrder.innerText = ++numberOfOrderCount;
-//     totalOrder;
+let numberOfOrderCount = 0
+let totalPriceCount = 0
+function cart(){
+    let numberOfOrder = document.querySelector("#numberOfOrder")
+    let totalOrder = numberOfOrder.innerText = ++numberOfOrderCount;
+    totalOrder;
 
 
-//     let price = document.querySelector("#price").innerText;
-//     let priceTotalCount = price * numberOfOrderCount
-//     document.querySelector("#totalPrice").innerText = priceTotalCount
+    let price = document.querySelector("#price").innerText;
+    let priceTotalCount = price * numberOfOrderCount
+    document.querySelector("#totalPrice").innerText = priceTotalCount
 
-//     function price(){
+    function price(){
         
-//     }
+    }
 
-// }
-
-
-
-
-const cards = document.getElementsByClassName("card")
-for(const card of cards){
-    const 
 }
+
+
+
