@@ -2,8 +2,6 @@
 // Click on the add to cart and show the number of order in the badge
 // Click on the add to cart and show the price of the product in the cart
 
-
-
 // Adding the amount of order using function
 let numberOfOrderCount = 0
 // let totalPriceCount = 0
