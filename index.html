@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg mb-5 navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">PizzBur</a>
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <div>
+          <i class="fas fa-shopping-cart">
+            <span id="numberOfOrder" class="badge bg-secondary rounded-circle"
+              >0</span
+            >
+          </i>
+          <p>Total Price : <span id="totalPrice">0</span></p>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <main>
+      <section>
+        <div class="container">
+          <div class="cards">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="card" style="width: 18rem">
+                  <img
+                    src="img/pizza.jpg"
+                    class="card-img-top w-100"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Pizza</h5>
+                    <p class="card-text">
+                      Best Pizza you can ever experience in the world. So, jump
+                      into Click the button to order delicious pizza.
+                    </p>
+                    <div class="row">
+                      <div class="col-6">
+                        <button
+                          onclick="cart()"
+                          id="addToCart"
+                          class="btn btn-danger"
+                        >
+                          Add TO Cart
+                        </button>
+                      </div>
+                      <div class="col-6">
+                        <p>Price : <span id="price">350</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card" style="width: 18rem">
+                  <img
+                    src="img/burger.jpg"
+                    class="card-img-top w-100"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Burger</h5>
+                    <p class="card-text">
+                      Best Burger you can ever experience in the world. So, jump
+                      into Click the button to order Burger.
+                    </p>
+                    <div class="row">
+                      <div class="col-6">
+                        <button
+                          onclick="cart()"
+                          id="addToCart"
+                          class="btn btn-danger"
+                        >
+                          Add TO Cart
+                        </button>
+                      </div>
+                      <div class="col-6">
+                        <p>Price : <span id="price">300</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Custom JS -->
+    <script src="JS/index.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
